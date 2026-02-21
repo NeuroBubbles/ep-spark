@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EP Spark</title>
+
+  <meta name="description" content="EP Spark delivers short, practical insights designed to reduce overwhelm and support sustainable momentum for neurodivergent minds." />
+  <meta property="og:title" content="EP Spark" />
+  <meta property="og:description" content="Short, practical insights for neurodivergent minds." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="nav">
+      <div class="brand">
+        <img src="assets/epspark-icon.svg" alt="EP Spark icon">
+        <div class="brand-title">
+          <strong>EP Spark</strong>
+          <span>Micro-insights • Low overload</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="chip" href="support.html">Support</a>
+        <a class="chip" href="privacy.html">Privacy</a>
+        <a class="chip" href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <div class="card-inner">
+          <div class="h-eyebrow">EP Spark</div>
+          <h1 class="h-title">Short, practical insights for neurodivergent minds.</h1>
+          <p class="h-subtitle">
+            EP Spark is built to deliver quick, low-effort prompts that help reduce overwhelm, strengthen self-compassion, and support the next small step.
+          </p>
+
+          <div class="actions">
+            <a class="btn primary" href="{{APPSTORE_URL}}" aria-label="Download EP Spark">
+              <img src="assets/appstore-badge.svg" alt="" style="width:190px;height:56px;border-radius:14px;">
+            </a>
+
+            <a class="btn" href="support.html">Get support</a>
+            <a class="btn" href="privacy.html">Read privacy policy</a>
+          </div>
+
+          <div class="kicker">
+            Contact: <a href="mailto:{{contact.epspark@energyplanner.app}}">{{contact.epspark@energyplanner}}</a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="card">
+          <div class="card-inner stat">
+            <div class="pill">Designed for low cognitive load</div>
+            <div class="pill">Fast to read • easy to exit</div>
+            <div class="pill">Clear privacy disclosure</div>
+            <p class="small" style="margin:10px 0 0;">
+              Reviewer-friendly: privacy + support are directly linked and reachable from the homepage.
+            </p>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-inner">
+            <h2 class="page-title" style="margin:0 0 6px;">What you get</h2>
+            <div class="grid">
+              <div class="feature">
+                <h3>Micro-insights</h3>
+                <p>Short prompts meant to help you reset and move forward.</p>
+              </div>
+              <div class="feature">
+                <h3>Low-overwhelm UI</h3>
+                <p>Minimal screens and minimal decisions.</p>
+              </div>
+              <div class="feature">
+                <h3>Clear boundaries</h3>
+                <p>Supportive content, not medical advice.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <section class="section card">
+      <div class="card-inner">
+        <h2>App Store notes</h2>
+        <ul>
+          <li>Your App Store listing should match this site’s app name and support email.</li>
+          <li>Your Privacy Policy URL in App Store Connect can point to <code>/epspark/privacy.html</code>.</li>
+          <li>If you use analytics, crash reporting, accounts, or subscriptions, update the privacy policy accordingly.</li>
+        </ul>
+        <div class="notice">
+          EP Spark content is for general informational/support purposes and is not medical, mental health, or professional advice.
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> {{Neuro_Bubbles}}. All rights reserved.</div>
+      <div>
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a> ·
+        <a href="support.html">Support</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
